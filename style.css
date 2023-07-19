@@ -100,8 +100,9 @@ body {
 }
 
 main {
-    margin: 7rem auto;
+    margin: 8rem auto;
     width: 17rem;
+    height: 25rem;
     max-width: 95%;
     display: flex;
     flex-direction: column;
