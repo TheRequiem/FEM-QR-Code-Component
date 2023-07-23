@@ -1,90 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-/*  CSS Reset                  */
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
-}
-
-/*
+  }
+  /*
     2. Remove default margin
   */
-* {
+  * {
     margin: 0;
-}
-
-/*
+  }
+  /*
     3. Allow percentage-based heights in the application
   */
-html,
-body {
+  html, body {
     height: 100%;
-}
-
-/*
+  }
+  /*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-body {
+  body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-}
-
-/*
+  }
+  /*
     6. Improve media defaults
   */
-img,
-picture,
-video,
-canvas,
-svg {
+  img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-}
-
-/*
+  }
+  /*
     7. Remove built-in form typography styles
   */
-input,
-button,
-textarea,
-select {
+  input, button, textarea, select {
     font: inherit;
-}
-
-/*
+  }
+  /*
     8. Avoid text overflows
   */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-}
-
-/*
+  }
+  /*
     9. Create a root stacking context
   */
-#root,
-#__next {
+  #root, #__next {
     isolation: isolate;
-}
-
-html,
-body {
-    margin: 0;
-    height: 100%;
-    overflow: auto
-}
+  }
+ /*
+    10. Avoid pointless scrolling and overflow issues
+  */
+  html, body {margin: 0; height: 100%; overflow: auto}
 
 :root {
     --clr-white: hsl(0, 0%, 100%);
@@ -96,13 +67,15 @@ body {
 
 body {
     background-color: var(--clr-light-gray);
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {
-    margin: 5rem auto;
     width: 19rem;
-    max-width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,33 +89,25 @@ img {
     border-radius: 0.5rem;
 }
 
-h1,
-p {
+h1, p {
     font-family: 'Outfit', sans-serif;
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-weight: 700;
     font-size: 1.3rem;
     color: var(--clr-dark-blue);
+    margin: 1rem 0;
 }
 
-p {
+p  {
     font-weight: 400;
     font-size: 1rem;
     color: var(--clr-gray-blue);
+    margin-bottom: 0.8rem;
 }
 
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+.attribution { font-size: 14px; text-align: center; margin-top: 4rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
