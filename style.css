@@ -76,6 +76,7 @@ body {
 
 main {
     width: 19rem;
+    max-width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
